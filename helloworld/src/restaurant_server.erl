@@ -23,7 +23,7 @@ close_res(Pid) ->
 	gen_server:call(Pid, terminate).
 
 %%% Server functions
-init([]) -> {ok, []}. %% no treatment of info here!
+init([]) -> {ok, []}.
  
 handle_call({order, Name, Status, Description}, _From, Foods) ->
 	if
